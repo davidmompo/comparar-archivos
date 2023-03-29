@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+        <title>Comparador de archivos</title>
+<style>
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 11.5%;
+        background-image: url(bg.jpg);
+        background-repeat: no-repeat;
+        background-image: fixed;
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    form{
+        font-family: Verdana;
+        text-shadow: 2px 2px 2px black;
+        width: 350px;
+        height: 350px;
+        border: 5px solid rgba(207, 214, 255, 0.248);
+        border-radius: 50%;
+        color: rgb(191, 255, 234);
+        backdrop-filter: blur(5px);
+    }
+
+    form:hover{
+        backdrop-filter: none;
+        animation: animation 1s;
+        animation-timing-function: ease-in-out; 
+        animation-iteration-count: infinite; 
+        animation-play-state: running;
+    }
+
+@keyframes animation { 
+    0% { transform: scale(1.01); } 
+    14% { transform: scale(1.02); } 
+    28% { transform: scale(1.025); } 
+    42% { transform: scale(1.03); } 
+    56% { transform: scale(1.025); } 
+    70% { transform: scale(1.02); } 
+    84% { transform: scale(1.015); } 
+    100% { transform: scale(1.01); } 
+    }
+</style>
+</head>
+
+<body>
+
+        <form method="post" action="dif.php">
+
+            <br><h1>Comparador de <br> archivos</h1><br>
+
+                <label for="archivo1">Archivo 1:</label><br>
+
+                <input type="text" name="archivo1" id="archivo1"><br><br>
+
+                <label for="archivo2">Archivo 2:</label><br>
+
+                <input type="text" name="archivo2" id="archivo2"><br><br>
+
+                <input type="submit" value="Comparar"><br><br>
+	<h5><i>Si los archivos son identicos no se mostrara nada!</i></h5>
+        </form>
+
+</body>
+
+</html>
+
